@@ -4,7 +4,6 @@ import { editExpense, removeExpense } from '../actions/expenses'
 import { connect } from 'react-redux';
 
 const EditExpensePage = (props) => {
-    console.log('PROPS',props)
     return (
         <div>
             <h1>Edit Expense</h1>
