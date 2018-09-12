@@ -6,7 +6,6 @@ import numeral from 'numeral';
 const ExpenseListItem = ({ description, amount, createdAt, id}) => (
     <div>
         <h3><Link to={`/edit/${id}`}>{description}</Link></h3>
-        {console.log(amount)}
         <p>{ numeral(amount).format('$0,0.00') } - {moment(createdAt).format('MMMM Do, YYYY')}</p>
     </div>
 )
